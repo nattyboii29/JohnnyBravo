@@ -2,23 +2,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Johnny Bravo's Tasty Treats</title>
-        <link rel="stylesheet" href="style.css">
+        <title>JTT Order Form</title>
+        <link rel="stylesheet" href="johnnybravo.css">
     </head>
     <body>
         <div class="form container">
-            <h1>Welcome!</h1>
+            <h1>Welcome to John's Tasty Treats!</h1>
+            <h3>Create your own custom cake here!</h3>
             <form action="#" method="post" id="cakeOrderForm">
-            <label for="flavor">Choose your Challenger</label>
+            <label for="flavor">Choose your Cake Flavor</label>
             <select id="flavor" name="flavor" required>
                 <option value="Chocolate">Chocolate</option>
                 <option value="Vanilla">Vanilla</option>
                 <option value="Strawberry">Strawberry</option>
+                <option value="Lemon">Lemon</option>
+                <option value="Red Velvet">Red Velvet</option>
+                <option value="Blueberry">Blueberry</option>
             </select>
 
             <label for="size">Choose Size:</label>
             <select id="size" name="size" required>
-                <option value="3-inch">3 inches</option>
                 <option value="6-inch">6 inches</option>
                 <option value="9-inch">9 inches</option>
                 <option value="12-inch">12 inches</option>
@@ -27,10 +30,22 @@
             <label for="Design">Choose Design:</label>
             <select id="Design" name="Design" required>
                 <option value="Demure">Demure</option>
-                <option value="mediocre">Mediocre</option>
+                <option value="Mediocre">Mediocre</option>
                 <option value="Rockstar">Rockstar</option>
             </select>
 
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name">
+                
+                <label for="number">Your Phone Number:</label>
+                <input type="tel" id="number" name="phone" placeholder="Enter number">
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email">
+            
+            <label for="notes">Addtional Notes for Delivery (Optional)</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Notes for Delivery"></textarea>
+                
             <button type="submit">Submit Order</button>
             </form>
         </div>
